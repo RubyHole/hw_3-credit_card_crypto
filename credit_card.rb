@@ -53,6 +53,6 @@ class CreditCard
     # TODO: implement this method
     #   - Use sha256 from openssl to create a cryptographically secure hash.
     #   - Credit cards with identical information should produce the same hash
-    RbNaCl::Hash.sha256(to_s)
+    OpenSSL::Digest::SHA256.digest(to_s)
   end
 end
