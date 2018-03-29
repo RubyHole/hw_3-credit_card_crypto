@@ -1,6 +1,6 @@
 require_relative './luhn_validator.rb'
 require 'json'
-require 'rbnacl/libsodium'
+require 'openssl'
 
 class CreditCard
   # TODO: mixin the LuhnValidator using an 'include' statement
